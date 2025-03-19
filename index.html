@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<img>
+    <img src="imagem/logo.png" alt="imagem-logo-starbucks">
+
+    <h1>It`s not just coffe it`s Starbucks</h1>
+    <p>lorem ipsum dolor sit amet consectetur adiplom tambem nao preciso ficar escrevendo exatamente o que ele esta escrevendo </p>
+    <button>Clique aqui</button>
+
+    <img src="imagem/thumb1.png" alt="imagem-copo-starbucks"> 
+    <img src="imagem/img1.png" alt="imagem-copo-do-starbucks">
+    <img src="imagem/img2.png" alt="imagem-copo-pequeno">
+    <img src="imagem/img3.png" alt="imagem-copo-mediano">
+    
+
+
+<body>
+    <div class="loginform">
+        <h2>login</h2>
+        <form id="loginform">
+            <input type="text" id="username" placeholder="usuario" required>
+            <input type="password" id="password" placeholder="senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="menssage"></p>
+
+        <p>Nao tem uma conta? <a href="registro.html" class="register-btn"> registrese aqui</a></p>
+    </div>
+    <script>
+        document.getElementById("loginform").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            window.location.href = "perfil.html"; // Redireciona para a página perfil.html
+        });
+    </script>
+
+    
+</body>
+</html>
